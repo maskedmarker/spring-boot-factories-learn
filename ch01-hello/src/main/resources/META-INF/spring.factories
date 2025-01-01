@@ -1,0 +1,2 @@
+org.springframework.boot.SpringApplicationRunListener=org.example.learn.spring.boot.factories.hello.listener.ExampleSpringApplicationRunListener
+org.springframework.context.ApplicationListener=org.example.learn.spring.boot.factories.hello.listener.ExampleApplicationListener
