@@ -5,11 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.example.learn.spring.boot.factories</groupId>
-        <artifactId>spring-boot-factories-learn</artifactId>
+        <artifactId>ch00-commons</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>ch01-hello</artifactId>
+    <artifactId>ch001-third-lib</artifactId>
+    <description>模拟第三方的lib</description>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -36,35 +37,5 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
-        <!--test-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.example.learn.spring.boot.factories</groupId>
-            <artifactId>ch001-third-lib</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <!--只有使用springboot的maven插件,才能生成可用的包-->
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
 </project>

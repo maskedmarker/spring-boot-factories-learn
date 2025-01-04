@@ -1,0 +1,6 @@
+# Auto Configure
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=org.third.lib.config.ThirdLibAutoConfiguration
+# Environment Post Processors
+org.springframework.boot.env.EnvironmentPostProcessor=org.third.lib.config.env.ConfigLocationProcessor
+
+org.springframework.boot.SpringApplicationRunListener=org.third.lib.config.runner.ThirdExampleSpringApplicationRunListener

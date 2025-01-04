@@ -8,8 +8,8 @@
     <artifactId>spring-boot-factories-learn</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
-
         <module>ch01-hello</module>
+        <module>ch00-commons</module>
     </modules>
     <packaging>pom</packaging>
 
