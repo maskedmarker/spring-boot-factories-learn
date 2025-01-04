@@ -16,3 +16,4 @@ logging:
     org:
       springframework: warn
 
+configLocation: biz.properties
